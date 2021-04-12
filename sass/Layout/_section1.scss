@@ -1,0 +1,29 @@
+
+.section1{
+    font-size: 25px;
+    padding: 0px 0px 50px 0px;
+    text-align: center;
+    background-color: rgb(190, 190, 190);
+    & button{
+        font-size: 19px;
+        border: none;
+        width: 300px;
+        padding: 20px;
+        color: white;
+        background-color: rgb(83, 26, 187);
+        border-radius: 50px;
+        box-shadow: inset 15px 15px 50px rgb(194, 108, 175), 5px 5px 5px grey;
+        &:hover{
+            background-color: rgb(126, 0, 138);
+        }
+    }
+    & p{
+        width: 85%;
+        margin: 25px auto;
+    }
+    & h1{
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+

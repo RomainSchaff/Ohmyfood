@@ -1,0 +1,33 @@
+
+.section3{
+    background-color: rgb(190, 190, 190);
+    padding: 0px 5%;
+    & figure{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px grey;
+    }
+    & img{
+        height: calc(100% - 86px);
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    & figcaption{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & .coeur{
+            font-size: 20px;
+            &:hover{
+                color: violet;
+            }
+        }
+    }
+}
+
+

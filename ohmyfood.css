@@ -33,14 +33,14 @@ header p{
 
 /* 1ere section */
 
-#explorez{
+.section1{
     font-size: 25px;
     padding: 0px 0px 50px 0px;
     text-align: center;
     background-color: rgb(190, 190, 190);
 }
 
-#explorez button{
+.section1 button{
     font-size: 19px;
     border: none;
     width: 300px;
@@ -51,16 +51,16 @@ header p{
     box-shadow: inset 15px 15px 50px rgb(194, 108, 175), 5px 5px 5px grey;
 }
 
-#explorez button:hover{
+.section1 button:hover{
     background-color: rgb(126, 0, 138);
 }
 
-#explorez p{
+.section1 p{
     width: 85%;
     margin: 25px auto;
 }
 
-#explorez h1{
+.section1 h1{
     width: 85%;
     margin: 30px auto;
 }
@@ -68,14 +68,14 @@ header p{
 
 /* 2ieme section */
 
-#fonctionnement{
+.section2{
     display: flex;
     flex-direction: column;
     padding: 0px 5%;
     margin: 10px 0px 50px 0px;
 }
 
-#fonctionnement button{
+.section2 button{
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -90,16 +90,16 @@ header p{
     text-align: center;
 }
 
-#fonctionnement button:hover{
+.section2 button:hover{
     background-color: violet;
     color: white;
 }
 
-.degustez{
-    background-color: rgb(242, 203, 250);
+.section2__button{
+    background-color: pink;
 }
 
-.number{
+.section2__number{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,18 +112,18 @@ header p{
     margin-left: -42px;
 }
 
-.store{
+.section2__button__store{
     color: rgb(162, 0, 202);
 }
 
 /* 3ieme section */
 
-#restaurants{
+.section3{
     background-color: rgb(190, 190, 190);
     padding: 0px 5%;
 }
 
-#restaurants figure{
+.section3 figure{
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -134,13 +134,13 @@ header p{
     box-shadow: 10px 10px 5px grey;
 }
 
-#restaurants img{
+.section3 img{
     height: calc(100% - 86px);
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-#restaurants figcaption{
+.section3 figcaption{
     display: flex;
     justify-content: space-around;
     align-items: center;
