@@ -10,22 +10,27 @@
         margin: 20px 0px;
         background-color: white;
         border-radius: 20px;
-        box-shadow: 10px 10px 5px grey;
+        @include shadows;
     }
     & img{
-        height: calc(100% - 86px);
+        height: calc(100% - 76px);
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
     }
     & figcaption{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 0px 8%;
+        font-size: 25px;
         & .coeur{
-            font-size: 20px;
+            font-size: 30px;
             &:hover{
                 color: violet;
             }
+        }
+        & p{
+            margin: 10px 0px;
         }
     }
 }

@@ -15,7 +15,7 @@
         border-radius: 20px;
         border: none;
         padding: 25px;
-        box-shadow: 5px 5px 5px grey;
+        @include shadows;
         text-align: center;
         &:hover{
             background-color: $violet;

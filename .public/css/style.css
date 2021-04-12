@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -29,7 +35,7 @@ header p {
   color: white;
   background-color: #9356DC;
   border-radius: 50px;
-  box-shadow: inset 15px 15px 50px #FF79DA, 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 .section1 button:hover {
   background-color: #7e008a;
@@ -98,23 +104,28 @@ header p {
   margin: 20px 0px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 .section3 img {
-  height: calc(100% - 86px);
+  height: calc(100% - 76px);
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .section3 figcaption {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 8%;
+  font-size: 25px;
 }
 .section3 figcaption .coeur {
-  font-size: 20px;
+  font-size: 30px;
 }
 .section3 figcaption .coeur:hover {
   color: violet;
+}
+.section3 figcaption p {
+  margin: 10px 0px;
 }
 
 footer {

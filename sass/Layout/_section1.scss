@@ -12,7 +12,7 @@
         color: white;
         background-color: $violet;
         border-radius: 50px;
-        box-shadow: inset 15px 15px 50px $rose, 5px 5px 5px grey;
+        @include shadows;
         &:hover{
             background-color: rgb(126, 0, 138);
         }
