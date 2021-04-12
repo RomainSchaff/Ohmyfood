@@ -10,9 +10,9 @@
         width: 300px;
         padding: 20px;
         color: white;
-        background-color: rgb(83, 26, 187);
+        background-color: $violet;
         border-radius: 50px;
-        box-shadow: inset 15px 15px 50px rgb(194, 108, 175), 5px 5px 5px grey;
+        box-shadow: inset 15px 15px 50px $rose, 5px 5px 5px grey;
         &:hover{
             background-color: rgb(126, 0, 138);
         }

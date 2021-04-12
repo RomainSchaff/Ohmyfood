@@ -27,9 +27,9 @@ header p {
   width: 300px;
   padding: 20px;
   color: white;
-  background-color: #531abb;
+  background-color: #9356DC;
   border-radius: 50px;
-  box-shadow: inset 15px 15px 50px #c26caf, 5px 5px 5px grey;
+  box-shadow: inset 15px 15px 50px #FF79DA, 5px 5px 5px grey;
 }
 .section1 button:hover {
   background-color: #7e008a;
@@ -64,7 +64,7 @@ header p {
   text-align: center;
 }
 .section2 button:hover {
-  background-color: violet;
+  background-color: #9356DC;
   color: white;
 }
 .section2__number {
@@ -74,16 +74,16 @@ header p {
   height: 30px;
   width: 30px;
   color: white;
-  border: 2px solid #df02df;
+  border: 2px solid #FF79DA;
   border-radius: 50%;
-  background-color: #df02df;
+  background-color: #FF79DA;
   margin-left: -42px;
 }
 .section2__button {
-  background-color: pink;
+  background-color: #FF79DA;
 }
 .section2__button__store {
-  color: #a200ca;
+  color: #9356DC;
 }
 
 .section3 {
