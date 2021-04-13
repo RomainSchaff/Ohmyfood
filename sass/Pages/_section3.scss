@@ -1,7 +1,7 @@
 
 .section3{
-    background-color: rgb(190, 190, 190);
-    padding: 0px 5%;
+    background-color: $lightgrey;
+    padding: 50px 5%;
     & figure{
         display: flex;
         flex-direction: column;
@@ -10,7 +10,7 @@
         margin: 20px 0px;
         background-color: white;
         border-radius: 20px;
-        @include shadows;
+        @include shadows (5px);
     }
     & img{
         height: calc(100% - 80px);
@@ -26,7 +26,7 @@
         & .coeur{
             font-size: 30px;
             &:hover{
-                color: violet;
+                color: $rose;
             }
         }
         & p{

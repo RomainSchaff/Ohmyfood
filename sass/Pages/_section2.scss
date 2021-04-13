@@ -4,26 +4,8 @@
     flex-direction: column;
     padding: 0px 5%;
     margin: 10px 0px 50px 0px;
-    & button{
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        font-weight: bold;
-        margin: 10px;
-        width: 100%;
-        max-width: 600px;
-        border-radius: 20px;
-        border: none;
-        padding: 25px;
-        @include shadows;
-        text-align: center;
-        &:hover{
-            background-color: lighten($color: $violet, $amount: 30);
-            color: white;
-        & i {
-            color: $violet;
-        }
-        }
+    & h2{
+        margin-bottom: 10px;
     }
     &__number{
         display: flex;

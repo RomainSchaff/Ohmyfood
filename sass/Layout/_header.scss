@@ -10,10 +10,10 @@ header{
     & p{
         text-align: center;
         width: 100%;
-        background-color: rgb(211, 211, 211);
+        background-color: $grey;
         margin: 0px;
         padding: 20px 0px;
-        box-shadow: inset 0px 5px 10px rgb(124, 124, 124);
+        box-shadow: inset 0px 5px 10px $darkgrey;
     }
     & figure{
         width: 100%;
