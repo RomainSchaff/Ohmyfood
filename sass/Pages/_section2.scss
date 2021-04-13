@@ -18,8 +18,11 @@
         @include shadows;
         text-align: center;
         &:hover{
-            background-color: $violet;
+            background-color: lighten($color: $violet, $amount: 30);
             color: white;
+        & i {
+            color: $violet;
+        }
         }
     }
     &__number{
@@ -29,16 +32,10 @@
         height: 30px;
         width: 30px;
         color: white;
-        border: 2px solid $rose;
+        border: 2px solid $violet;
         border-radius: 50%;
-        background-color: $rose;
+        background-color: $violet;
         margin-left: -42px;
-    }
-    &__button{
-        background-color: $rose;
-        &__store{
-            color: $violet;
-        }
     }
 }
 

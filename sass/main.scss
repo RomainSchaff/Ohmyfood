@@ -1,22 +1,16 @@
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-}
-
-
 @import "./Utils/variables";
-
 @import "./Utils/mixins";
 
+@import "./Base/font-face";
+@import "./Base/body";
+
 @import "./Layout/header";
-
-@import "./Layout/section1";
-
-@import "./Layout/section2";
-
-@import "./Layout/section3";
-
 @import "./Layout/footer";
 
+@import "./Pages/section1";
+@import "./Pages/section2";
+@import "./Pages/section3";
+
+@import "./Components/buttons";
+@import "./Components/figures";

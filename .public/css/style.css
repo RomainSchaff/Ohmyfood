@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "Roboto", "Shrikhand";
+}
 body {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0px;
+  font-size: 20px;
+}
+
+.shrikhand {
+  font-family: "Shrikhand", sans-serif;
 }
 
 header {
@@ -10,7 +19,8 @@ header {
   align-items: center;
 }
 header img {
-  margin: 15px 0px;
+  height: 300px;
+  width: 100%;
 }
 header p {
   text-align: center;
@@ -19,6 +29,28 @@ header p {
   margin: 0px;
   padding: 20px 0px;
   box-shadow: inset 0px 5px 10px #7c7c7c;
+}
+header figure {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  color: white;
+  padding-left: 50px;
+}
+footer p {
+  margin: 40px 0px 20px 0px;
+}
+footer ul {
+  margin-top: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+footer ul li {
+  margin: 10px;
 }
 
 .section1 {
@@ -33,7 +65,7 @@ header p {
   width: 300px;
   padding: 20px;
   color: white;
-  background-color: #9356DC;
+  background: linear-gradient(to right bottom, #FF79DA 0%, #9356DC 60%);
   border-radius: 50px;
   box-shadow: 5px 5px 5px grey;
 }
@@ -43,6 +75,7 @@ header p {
 .section1 p {
   width: 85%;
   margin: 25px auto;
+  color: #585858;
 }
 .section1 h1 {
   width: 85%;
@@ -70,8 +103,11 @@ header p {
   text-align: center;
 }
 .section2 button:hover {
-  background-color: #9356DC;
+  background-color: #e4d5f6;
   color: white;
+}
+.section2 button:hover i {
+  color: #9356DC;
 }
 .section2__number {
   display: flex;
@@ -80,16 +116,10 @@ header p {
   height: 30px;
   width: 30px;
   color: white;
-  border: 2px solid #FF79DA;
+  border: 2px solid #9356DC;
   border-radius: 50%;
-  background-color: #FF79DA;
+  background-color: #9356DC;
   margin-left: -42px;
-}
-.section2__button {
-  background-color: #FF79DA;
-}
-.section2__button__store {
-  color: #9356DC;
 }
 
 .section3 {
@@ -107,7 +137,7 @@ header p {
   box-shadow: 5px 5px 5px grey;
 }
 .section3 img {
-  height: calc(100% - 76px);
+  height: calc(100% - 80px);
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -116,7 +146,7 @@ header p {
   justify-content: space-between;
   align-items: center;
   padding: 0px 8%;
-  font-size: 25px;
+  font-size: 23px;
 }
 .section3 figcaption .coeur {
   font-size: 30px;
@@ -126,25 +156,6 @@ header p {
 }
 .section3 figcaption p {
   margin: 10px 0px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #1b1b1b;
-  color: white;
-  padding-left: 50px;
-}
-footer p {
-  margin: 40px 0px 20px 0px;
-}
-footer ul {
-  margin-top: 0px;
-  padding: 0px;
-  list-style-type: none;
-}
-footer ul li {
-  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

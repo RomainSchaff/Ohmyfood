@@ -10,7 +10,7 @@
         width: 300px;
         padding: 20px;
         color: white;
-        background-color: $violet;
+        background: linear-gradient(to right bottom, $rose 0%, $violet 60%);
         border-radius: 50px;
         @include shadows;
         &:hover{
@@ -20,6 +20,7 @@
     & p{
         width: 85%;
         margin: 25px auto;
+        color: rgb(88, 88, 88);
     }
     & h1{
         width: 85%;
