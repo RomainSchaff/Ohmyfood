@@ -1,6 +1,6 @@
 
 @mixin shadows ($shadow-size) {
-    box-shadow: $shadow-size $shadow-size 5px grey;
+    box-shadow: $shadow-size $shadow-size 5px $grey;
 }
 
 @mixin button-border {

@@ -103,7 +103,7 @@ footer ul li {
   margin: 20px 0px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px #bebebe;
 }
 .section3 img {
   height: calc(100% - 80px);
@@ -130,12 +130,13 @@ footer ul li {
 .container {
   display: flex;
   flex-direction: column;
+  padding: 0px 5%;
 }
-
-.container {
+.container h2 {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .section1 button {
@@ -147,11 +148,11 @@ footer ul li {
   background: linear-gradient(to right bottom, #FF79DA 0%, #9356DC 60%);
   border-radius: 50px;
   outline: none;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px #bebebe;
 }
 .section1 button:hover {
   background: linear-gradient(to right bottom, #fface8 0%, #ae80e5 60%);
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px #bebebe;
 }
 
 .section2 button {
@@ -165,7 +166,7 @@ footer ul li {
   border-radius: 20px;
   border: none;
   padding: 25px;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px #bebebe;
   text-align: center;
   outline: none;
 }
@@ -175,7 +176,7 @@ footer ul li {
 .section2 button:hover {
   background-color: #e4d5f6;
   color: white;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px #bebebe;
 }
 .section2 button:hover i {
   color: #9356DC;
