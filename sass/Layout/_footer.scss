@@ -1,12 +1,11 @@
 
 footer{
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column);
     background-color: rgb(27, 27, 27);
     color: white;
     padding-left: 50px;
-    & p{
-        margin: 40px 0px 20px 0px;
+    & h1{
+        font-family: "Shrikhand", sans-serif;
     }
     & ul{
         margin-top: 0px;

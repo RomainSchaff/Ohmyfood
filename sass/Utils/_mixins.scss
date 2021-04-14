@@ -1,12 +1,17 @@
 
-@mixin flexbox ($flex-direction, $justify-content, $align-items){
+$stretch: stretch;
+$flex-start: flex-start;
+$row: row;
+
+@mixin flexbox ($flex-direction: $row, $justify-content: $flex-start, $align-items: $stretch){
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $align-items;
 }
 
-@mixin shadows ($shadow-size) {
+$shadow: 10px;
+@mixin shadows ($shadow-size: $shadow) {
     box-shadow: $shadow-size $shadow-size 5px $grey;
 }
 
@@ -15,8 +20,4 @@
     outline: none;
 }
 
-@mixin card-size{
-    padding: 20px;
-    font-size: 20px;
-}
 
