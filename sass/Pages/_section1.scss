@@ -4,14 +4,14 @@
     padding: 0px 0px 50px 0px;
     text-align: center;
     background-color: $lightgrey;
-    & p{
+    &__title{
+        width: 85%;
+        margin: 30px auto;
+    }
+    &__soustitre{
         width: 85%;
         margin: 25px auto;
         color: rgb(88, 88, 88);
-    }
-    & h1{
-        width: 85%;
-        margin: 30px auto;
     }
 }
 
