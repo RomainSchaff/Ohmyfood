@@ -9,20 +9,16 @@ body {
   font-size: 20px;
 }
 
-.shrikhand {
-  font-family: "Shrikhand", sans-serif;
-}
-
-.container h2 {
-  font-family: "Shrikhand";
-}
-
-header {
+.header-main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
-header p {
+.header-main__title {
+  font-family: "Shrikhand", sans-serif;
+}
+.header-main p {
   text-align: center;
   width: 100%;
   background-color: #bebebe;
@@ -30,8 +26,21 @@ header p {
   padding: 20px 0px;
   box-shadow: inset 0px 5px 10px #585858;
 }
-header figure {
+.header-main figure {
   width: 100%;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  grid-template-rows: 80px;
+}
+.header-menu i {
+  margin: auto;
+}
+.header-menu__title {
+  font-family: "Shrikhand", sans-serif;
+  margin: auto;
 }
 
 footer {
@@ -163,6 +172,7 @@ footer ul li {
   font-family: "Shrikhand", sans-serif;
   background-color: gainsboro;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: -15px 0px 0px 0px;

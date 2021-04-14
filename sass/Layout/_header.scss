@@ -1,8 +1,9 @@
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header-main{
+    @include flexbox(column, flex-start, center);
+    &__title{
+        font-family: "Shrikhand", sans-serif;
+    }
     & p{
         text-align: center;
         width: 100%;
@@ -13,6 +14,19 @@ header{
     }
     & figure{
         width: 100%;
+    }
+}
+
+.header-menu{
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: 80px;
+    & i{
+        margin: auto;
+    }
+    &__title{
+        font-family: "Shrikhand", sans-serif;
+        margin: auto;
     }
 }
 
