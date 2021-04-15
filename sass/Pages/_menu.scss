@@ -19,13 +19,13 @@
     @include flexbox(column);
     padding: 0px 5%;
     &__card{
-
+        
         &__title{
             text-transform: uppercase;
             font-weight: normal;
         }
         &__food{
-            background-color: white;
+            background-color: #ffffff;
             @include flexbox( none, space-between, flex-end);
             padding: 0px 30px 0px 10px;
             margin: 20px 0px;

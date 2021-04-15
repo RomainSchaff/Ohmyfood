@@ -1,13 +1,12 @@
 
 .button-gradient{
     font-size: 20px;
-    border: none;
     width: 300px;
     padding: 20px;
     color: white;
     background: linear-gradient(to right bottom, $rose 0%, $violet 60%);
     border-radius: 50px;
-    outline: none;
+    @include button-border;
     @include shadows (5px);
     &:hover{
         background: linear-gradient(to right bottom, lighten($color: $rose, $amount: 10) 0%, lighten($color: $violet, $amount: 10) 60%);
