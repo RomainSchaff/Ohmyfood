@@ -39,20 +39,24 @@
         &__food{
             background-color: #ffffff;
             @include flexbox( none, space-between, flex-end);
-            height: 95px;
             margin: 20px 0px;
             border-radius: 20px;
             @include shadows (5px);
+            overflow: hidden;
             &:hover{
                 &::after{
-                    animation: valid-width 1s;
-                    @include shadows (10px);
+                    animation: valid-width 1s ease forwards;
                 }
             }
             &__title{
                 @include flexbox( none, space-between, flex-end);
                 height: 95px;
                 width: 100%;
+                padding: 0px 20px;
+                & p{
+                    max-height: 55px;
+                    white-space: nowrap;
+                }
                 & strong{
                     font-size: 25px;
                 }
@@ -72,16 +76,16 @@
 .menu__card__food::after{
     content: '';
     height: 95px;
-    width: 0px;
-    background-color: rgb(101, 197, 114);
+    width: 5px;
+    background-color: rgb(105, 209, 157);
     border-radius: 0px 20px 20px 0px;
 }
 
 @keyframes valid-width{
     from{
-        width: 0px;
+        width: 5px;
     }
     to{
-        width: 85px;
+        width: 90px;
     }
 }

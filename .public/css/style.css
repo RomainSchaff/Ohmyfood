@@ -223,14 +223,13 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
-  height: 95px;
   margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
+  overflow: hidden;
 }
 .menu__card__food:hover::after {
-  animation: valid-width 1s;
-  box-shadow: 10px 10px 5px #bebebe;
+  animation: valid-width 1s ease forwards;
 }
 .menu__card__food__title {
   display: flex;
@@ -239,6 +238,11 @@ footer ul li {
   align-items: flex-end;
   height: 95px;
   width: 100%;
+  padding: 0px 20px;
+}
+.menu__card__food__title p {
+  max-height: 55px;
+  white-space: nowrap;
 }
 .menu__card__food__title strong {
   font-size: 25px;
@@ -258,17 +262,17 @@ footer ul li {
 .menu__card__food::after {
   content: "";
   height: 95px;
-  width: 0px;
-  background-color: #65c572;
+  width: 5px;
+  background-color: #69d19d;
   border-radius: 0px 20px 20px 0px;
 }
 
 @keyframes valid-width {
   from {
-    width: 0px;
+    width: 5px;
   }
   to {
-    width: 85px;
+    width: 90px;
   }
 }
 .button-gradient {
