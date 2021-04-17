@@ -14,15 +14,21 @@
     }
 }
 
-.menu {
+.menu{
     background-color: $lightgrey;
     @include flexbox(column);
     padding: 0px 5%;
     &__card{
-        
         &__title{
             text-transform: uppercase;
             font-weight: normal;
+            &::after{
+                content: '';
+                display: block;
+                width: 65px;
+                height: 5px;
+                background-color: #99E2D0;
+            }
         }
         &__food{
             background-color: #ffffff;
