@@ -191,6 +191,12 @@ footer ul li {
   margin: -50px 0px 0px 0px;
   border-radius: 30px 30px 0px 0px;
 }
+.description__figure__title .coeur {
+  margin-right: 25px;
+}
+.description__figure__title .coeur :hover {
+  color: #FF79DA;
+}
 
 .menu {
   background-color: gainsboro;
@@ -217,10 +223,22 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0px 30px 0px 10px;
+  height: 95px;
   margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
+}
+.menu__card__food:hover::after {
+  animation: valid-width 1s;
+  box-shadow: 10px 10px 5px #bebebe;
+}
+.menu__card__food__title {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 95px;
+  width: 100%;
 }
 .menu__card__food__title strong {
   font-size: 25px;
@@ -237,6 +255,22 @@ footer ul li {
   height: 200px;
 }
 
+.menu__card__food::after {
+  content: "";
+  height: 95px;
+  width: 0px;
+  background-color: #65c572;
+  border-radius: 0px 20px 20px 0px;
+}
+
+@keyframes valid-width {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 85px;
+  }
+}
 .button-gradient {
   font-size: 20px;
   width: 300px;
