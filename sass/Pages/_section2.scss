@@ -34,7 +34,6 @@
         }
         &:hover{
             background-color: lighten($color: $violet, $amount: 30);
-            color: white;
             @include shadows (10px);
             & i{
             color: $violet;

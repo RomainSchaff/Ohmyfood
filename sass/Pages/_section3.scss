@@ -3,12 +3,11 @@
     background-color: $lightgrey;
     padding: 50px 5%;
     & figure{
-        display: flex;
-        flex-direction: column;
+        background-color: white;
+        @include flexbox(column);
         height: 300px;
         width: 100%;
         margin: 20px 0px;
-        background-color: white;
         border-radius: 20px;
         @include shadows (5px);
     }
@@ -18,14 +17,18 @@
         border-radius: 20px 20px 0px 0px;
     }
     & figcaption{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 8%;
         font-size: 23px;
+        @include flexbox(row, space-between, center);
+        padding: 0px 8%;
+        
         & .coeur{
             font-size: 30px;
-            &:hover{
+            ::before{
+                color: #000000;
+                transition: color 1s;
+            }
+            :hover::before{
+                font-weight: bold;
                 color: $rose;
             }
         }

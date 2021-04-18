@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Mixin pour les flexboxs*/
 /*Mixin pour les ombres*/
 /*Mixin pour les bordures (souvent des boutons)*/
@@ -78,9 +79,9 @@ footer ul li {
   margin: 30px auto;
 }
 .section1__soustitre {
+  color: #585858;
   width: 85%;
   margin: 25px auto;
-  color: #585858;
 }
 
 .section2 {
@@ -130,7 +131,6 @@ footer ul li {
 }
 .section2__button:hover {
   background-color: #e4d5f6;
-  color: white;
   box-shadow: 10px 10px 5px #bebebe;
 }
 .section2__button:hover i {
@@ -142,12 +142,14 @@ footer ul li {
   padding: 50px 5%;
 }
 .section3 figure {
+  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   height: 300px;
   width: 100%;
   margin: 20px 0px;
-  background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
 }
@@ -157,16 +159,22 @@ footer ul li {
   border-radius: 20px 20px 0px 0px;
 }
 .section3 figcaption {
+  font-size: 23px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 8%;
-  font-size: 23px;
 }
 .section3 figcaption .coeur {
   font-size: 30px;
 }
-.section3 figcaption .coeur:hover {
+.section3 figcaption .coeur ::before {
+  color: #000000;
+  transition: color 1s;
+}
+.section3 figcaption .coeur :hover::before {
+  font-weight: bold;
   color: #FF79DA;
 }
 .section3 figcaption p {
@@ -192,10 +200,21 @@ footer ul li {
   border-radius: 30px 30px 0px 0px;
 }
 .description__figure__title .coeur {
+  color: #ffffff;
+  background-color: gainsboro;
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 0.2em;
   margin-right: 25px;
 }
-.description__figure__title .coeur :hover {
+.description__figure__title .coeur ::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.description__figure__title .coeur :hover::before {
   color: #FF79DA;
+  cursor: pointer;
 }
 
 .menu {
@@ -209,6 +228,12 @@ footer ul li {
 .menu__card__title {
   text-transform: uppercase;
   font-weight: normal;
+  animation: card-load 300ms 200ms both;
+}
+.menu__card__title:hover::after {
+  transform-origin: left;
+  transform: scaleX(5);
+  transition: transform 1s;
 }
 .menu__card__title::after {
   content: "";
@@ -216,6 +241,7 @@ footer ul li {
   width: 65px;
   height: 5px;
   background-color: #99E2D0;
+  transform: scaleX(1);
 }
 .menu__card__food {
   background-color: #ffffff;
@@ -223,33 +249,45 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
+  height: 95px;
   margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
   overflow: hidden;
+  animation: card-load 1s 500ms both;
 }
 .menu__card__food:hover::after {
-  animation: valid-width 1s ease forwards;
+  width: 100px;
 }
 .menu__card__food__title {
   display: flex;
-  flex-direction: none;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 95px;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 90%;
   padding: 0px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__food__title:hover h4 {
+  transition: color 1s;
+  color: #81e4b3;
+}
+.menu__card__food__title h4 {
+  font-size: 22px;
+  margin: 5px 0px;
 }
 .menu__card__food__title p {
-  max-height: 55px;
-  white-space: nowrap;
-}
-.menu__card__food__title strong {
-  font-size: 25px;
+  font-size: 19px;
+  color: #505050;
+  margin: 0px;
 }
 .menu__card__food__prix {
   font-size: 21px;
   font-weight: bold;
+  margin: 20px;
 }
 .menu__commande {
   display: flex;
@@ -261,18 +299,28 @@ footer ul li {
 
 .menu__card__food::after {
   content: "";
-  height: 95px;
-  width: 5px;
-  background-color: #69d19d;
+  background-color: #81e4b3;
+  height: 100%;
+  width: 0px;
+  transform-origin: right;
+  transition: width 1s;
   border-radius: 0px 20px 20px 0px;
 }
 
 @keyframes valid-width {
   from {
-    width: 5px;
+    width: 0px;
   }
   to {
-    width: 90px;
+    width: 100px;
+  }
+}
+@keyframes card-load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .button-gradient {
@@ -285,10 +333,14 @@ footer ul li {
   border: none;
   outline: none;
   box-shadow: 5px 5px 5px #bebebe;
+  transform: scale(1);
+  transition: transform 300ms;
 }
 .button-gradient:hover {
   background: linear-gradient(to right bottom, #fface8 0%, #ae80e5 60%);
   box-shadow: 10px 10px 5px #bebebe;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
