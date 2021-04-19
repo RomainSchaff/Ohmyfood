@@ -2,6 +2,61 @@
 /*Mixin pour les flexboxs*/
 /*Mixin pour les ombres*/
 /*Mixin pour les bordures (souvent des boutons)*/
+@keyframes valid-width {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
+}
+@keyframes card-load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__card:nth-child(1) :nth-child(1) {
+  animation: card-load 300ms 300ms both;
+}
+.menu__card:nth-child(1) :nth-child(2) {
+  animation: card-load 300ms 600ms both;
+}
+.menu__card:nth-child(1) :nth-child(3) {
+  animation: card-load 300ms 900ms both;
+}
+.menu__card:nth-child(1) :nth-child(4) {
+  animation: card-load 300ms 1200ms both;
+}
+
+.menu__card:nth-child(2) :nth-child(1) {
+  animation: card-load 300ms 300ms both;
+}
+.menu__card:nth-child(2) :nth-child(2) {
+  animation: card-load 300ms 600ms both;
+}
+.menu__card:nth-child(2) :nth-child(3) {
+  animation: card-load 300ms 900ms both;
+}
+.menu__card:nth-child(2) :nth-child(4) {
+  animation: card-load 300ms 1200ms both;
+}
+
+.menu__card:nth-child(3) :nth-child(1) {
+  animation: card-load 300ms 300ms both;
+}
+.menu__card:nth-child(3) :nth-child(2) {
+  animation: card-load 300ms 600ms both;
+}
+.menu__card:nth-child(3) :nth-child(3) {
+  animation: card-load 300ms 900ms both;
+}
+.menu__card:nth-child(3) :nth-child(4) {
+  animation: card-load 300ms 1200ms both;
+}
+
 @font-face {
   font-family: "Roboto", "Shrikhand", sans-serif;
   src: "";
@@ -228,7 +283,6 @@ footer ul li {
 .menu__card__title {
   text-transform: uppercase;
   font-weight: normal;
-  animation: card-load 300ms 200ms both;
 }
 .menu__card__title:hover::after {
   transform-origin: left;
@@ -254,7 +308,15 @@ footer ul li {
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
   overflow: hidden;
-  animation: card-load 1s 500ms both;
+}
+.menu__card__food::after {
+  content: "";
+  background-color: #81e4b3;
+  height: 100%;
+  width: 0px;
+  transform-origin: right;
+  transition: width 1s;
+  border-radius: 0px 20px 20px 0px;
 }
 .menu__card__food:hover::after {
   width: 100px;
@@ -297,32 +359,6 @@ footer ul li {
   height: 200px;
 }
 
-.menu__card__food::after {
-  content: "";
-  background-color: #81e4b3;
-  height: 100%;
-  width: 0px;
-  transform-origin: right;
-  transition: width 1s;
-  border-radius: 0px 20px 20px 0px;
-}
-
-@keyframes valid-width {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 100px;
-  }
-}
-@keyframes card-load {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .button-gradient {
   font-size: 20px;
   width: 300px;

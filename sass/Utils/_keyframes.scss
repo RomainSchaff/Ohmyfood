@@ -1,0 +1,18 @@
+
+@keyframes valid-width{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100px;
+    }
+}
+
+@keyframes card-load {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

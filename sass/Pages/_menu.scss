@@ -36,11 +36,10 @@
     @include flexbox(column);
     padding: 0px 5%;
     &__card{
-
+        
         &__title{
             text-transform: uppercase;
             font-weight: normal;
-            animation: card-load 300ms 200ms both;
             &:hover::after{
                 transform-origin: left;
                 transform: scaleX(5);
@@ -63,7 +62,15 @@
             border-radius: 20px;
             @include shadows (5px);
             overflow: hidden;
-            animation: card-load 1s 500ms both;
+            &::after{
+                content: '';
+                background-color: #81e4b3;
+                height: 100%;
+                width: 0px;
+                transform-origin: right;
+                transition: width 1s;
+                border-radius: 0px 20px 20px 0px;
+            }
             &:hover{
                 &::after{
                     width: 100px;
@@ -102,33 +109,5 @@
     &__commande{
         @include flexbox( default, center, center);
         height: 200px;
-    }
-}
-
-.menu__card__food::after{
-    content: '';
-    background-color: #81e4b3;
-    height: 100%;
-    width: 0px;
-    transform-origin: right;
-    transition: width 1s;
-    border-radius: 0px 20px 20px 0px;
-}
-
-@keyframes valid-width{
-    from{
-        width: 0px;
-    }
-    to{
-        width: 100px;
-    }
-}
-
-@keyframes card-load {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
     }
 }

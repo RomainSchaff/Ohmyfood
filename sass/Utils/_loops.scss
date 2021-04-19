@@ -1,0 +1,12 @@
+
+$childs: 1, 2, 3;
+
+@each $child in $childs{
+    .menu__card:nth-child(#{$child}){
+        @for $i from 1 through 4{
+            :nth-child(#{$i}){
+                animation: card-load 300ms ($i * 300ms) both;
+                }
+        }
+    }
+}
