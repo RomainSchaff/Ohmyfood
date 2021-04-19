@@ -50,7 +50,7 @@
                 display: block;
                 width: 65px;
                 height: 5px;
-                background-color: #99E2D0;
+                background-color: $turquoise;
                 transform: scaleX(1);
             }
         }
@@ -64,7 +64,7 @@
             overflow: hidden;
             &::after{
                 content: '';
-                background-color: #81e4b3;
+                background-color: $turquoise;
                 height: 100%;
                 width: 0px;
                 transform-origin: right;
@@ -80,29 +80,29 @@
             &__title{
                 @include flexbox (column, center, flex-start);
                 height: 100%;
-                width: 90%;
+                width: 70%;
                 padding: 0px 20px;
-                white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
                 &:hover h4{
                     transition: color 1s;
-                    color: #81e4b3;
+                    color: $turquoise;
                 }
                 & h4{
                     font-size: 22px;
                     margin: 5px 0px;
+                    white-space: nowrap;
                 }
                 p{
                     font-size: 19px;
-                    color: rgb(80, 80, 80);
+                    color: $darkgrey;
                     margin: 0px;
+                    white-space: nowrap;
                 }
             }
             &__prix{
                 font-size: 21px;
                 font-weight: bold;
-                margin: 20px;
+                margin: 20px 10px;
             }
         }
     }

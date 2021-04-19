@@ -18,43 +18,67 @@
     opacity: 1;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+}
 .menu__card:nth-child(1) :nth-child(1) {
-  animation: card-load 300ms 300ms both;
+  animation: card-load 300ms 1500ms both;
 }
 .menu__card:nth-child(1) :nth-child(2) {
-  animation: card-load 300ms 600ms both;
+  animation: card-load 300ms 1800ms both;
 }
 .menu__card:nth-child(1) :nth-child(3) {
-  animation: card-load 300ms 900ms both;
+  animation: card-load 300ms 2100ms both;
 }
 .menu__card:nth-child(1) :nth-child(4) {
-  animation: card-load 300ms 1200ms both;
+  animation: card-load 300ms 2400ms both;
 }
 
 .menu__card:nth-child(2) :nth-child(1) {
-  animation: card-load 300ms 300ms both;
+  animation: card-load 300ms 2700ms both;
 }
 .menu__card:nth-child(2) :nth-child(2) {
-  animation: card-load 300ms 600ms both;
+  animation: card-load 300ms 3000ms both;
 }
 .menu__card:nth-child(2) :nth-child(3) {
-  animation: card-load 300ms 900ms both;
+  animation: card-load 300ms 3300ms both;
 }
 .menu__card:nth-child(2) :nth-child(4) {
-  animation: card-load 300ms 1200ms both;
+  animation: card-load 300ms 3600ms both;
 }
 
 .menu__card:nth-child(3) :nth-child(1) {
-  animation: card-load 300ms 300ms both;
+  animation: card-load 300ms 3900ms both;
 }
 .menu__card:nth-child(3) :nth-child(2) {
-  animation: card-load 300ms 600ms both;
+  animation: card-load 300ms 4200ms both;
 }
 .menu__card:nth-child(3) :nth-child(3) {
-  animation: card-load 300ms 900ms both;
+  animation: card-load 300ms 4500ms both;
 }
 .menu__card:nth-child(3) :nth-child(4) {
-  animation: card-load 300ms 1200ms both;
+  animation: card-load 300ms 4800ms both;
 }
 
 @font-face {
@@ -123,11 +147,44 @@ footer ul li {
   margin: 10px;
 }
 
+.loader {
+  background: radial-gradient(#FF79DA, #9356DC);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: load 3s linear both;
+}
+
+.loader-spiner {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#FF79DA, #9356DC);
+  border-top: 10px solid #9356DC;
+  border-left: 10px solid #99E2D0;
+  border-bottom: 10px solid #9356DC;
+  border-right: 10px solid #99E2D0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spin 3s linear both;
+  z-index: 10;
+}
+
 .section1 {
   font-size: 25px;
   padding: 0px 0px 50px 0px;
   text-align: center;
-  background-color: gainsboro;
+  background-color: #dcdcdc;
 }
 .section1__title {
   width: 85%;
@@ -193,7 +250,7 @@ footer ul li {
 }
 
 .section3 {
-  background-color: gainsboro;
+  background-color: #dcdcdc;
   padding: 50px 5%;
 }
 .section3 figure {
@@ -245,7 +302,7 @@ footer ul li {
 }
 .description__figure__title {
   font-family: "Shrikhand", sans-serif;
-  background-color: gainsboro;
+  background-color: #dcdcdc;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -256,7 +313,7 @@ footer ul li {
 }
 .description__figure__title .coeur {
   color: #ffffff;
-  background-color: gainsboro;
+  background-color: #dcdcdc;
   font-size: 40px;
   border-radius: 50%;
   padding: 0.2em;
@@ -273,7 +330,7 @@ footer ul li {
 }
 
 .menu {
-  background-color: gainsboro;
+  background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -311,7 +368,7 @@ footer ul li {
 }
 .menu__card__food::after {
   content: "";
-  background-color: #81e4b3;
+  background-color: #99E2D0;
   height: 100%;
   width: 0px;
   transform-origin: right;
@@ -327,29 +384,29 @@ footer ul li {
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  width: 90%;
+  width: 70%;
   padding: 0px 20px;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__card__food__title:hover h4 {
   transition: color 1s;
-  color: #81e4b3;
+  color: #99E2D0;
 }
 .menu__card__food__title h4 {
   font-size: 22px;
   margin: 5px 0px;
+  white-space: nowrap;
 }
 .menu__card__food__title p {
   font-size: 19px;
-  color: #505050;
+  color: #585858;
   margin: 0px;
+  white-space: nowrap;
 }
 .menu__card__food__prix {
   font-size: 21px;
   font-weight: bold;
-  margin: 20px;
+  margin: 20px 10px;
 }
 .menu__commande {
   display: flex;
