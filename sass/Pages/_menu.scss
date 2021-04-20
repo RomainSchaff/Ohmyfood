@@ -23,19 +23,10 @@
                 border-radius: 30px;
             }
             .coeur{
-                color: #ffffff;
                 background-color: $lightgrey;
                 font-size: 40px;
-                border-radius: 50%;
-                padding:.2em;
-                margin-right: 25px;
-                ::before{
-                    content: "\f004";
-                    font-weight: bold;
-                    transition: color 1s ease-out;
-                }
                 :hover::before{
-                    color: $rose;
+                    animation: heart 2s both;
                     cursor: pointer;
                 }
             }
@@ -43,9 +34,11 @@
     }
 }
 
+
 .menu{
     background-color: $lightgrey;
     @include flexbox(column);
+    padding-top: 25px;
     padding: 0px 5%;
     @media (min-width: 1000px){
         display: grid;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Mixin pour les flexboxs*/
 /*Mixin pour les ombres*/
 /*Mixin pour les bordures (souvent des boutons)*/
@@ -42,6 +41,18 @@
     opacity: 0;
     z-index: -1;
     display: none;
+  }
+}
+@keyframes heart {
+  0% {
+    font-weight: normal;
+    color: black;
+    opacity: 1;
+  }
+  100% {
+    font-weight: bold;
+    color: #FF79DA;
+    opacity: 1;
   }
 }
 .menu__card:nth-child(1) :nth-child(1) {
@@ -397,20 +408,11 @@ footer ul li {
   }
 }
 .description__figure__title .coeur {
-  color: #ffffff;
   background-color: #dcdcdc;
   font-size: 40px;
-  border-radius: 50%;
-  padding: 0.2em;
-  margin-right: 25px;
-}
-.description__figure__title .coeur ::before {
-  content: "";
-  font-weight: bold;
-  transition: color 1s ease-out;
 }
 .description__figure__title .coeur :hover::before {
-  color: #FF79DA;
+  animation: heart 2s both;
   cursor: pointer;
 }
 
@@ -420,6 +422,7 @@ footer ul li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  padding-top: 25px;
   padding: 0px 5%;
 }
 @media (min-width: 1000px) {

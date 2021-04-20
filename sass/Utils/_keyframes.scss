@@ -44,3 +44,16 @@
         display: none;
     }
 }
+
+@keyframes heart {
+    0%{
+        font-weight: normal;
+        color: black;
+        opacity: 1;
+    }
+    100%{
+        font-weight: bold;
+        color: $rose;
+        opacity: 1;
+    }
+}
