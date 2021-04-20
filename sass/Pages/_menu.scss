@@ -49,16 +49,15 @@
     padding: 0px 5%;
     @media (min-width: 1000px){
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(2, 450px);
-        text-align: center;
+        grid-template-columns: 1fr 1fr;
         margin: 10px;
         border-radius: 30px;
     }
     &__card{
-        @include flexbox(column, flex-start, center);
+        @include flexbox(column, flex-start, stretch);
+        
         @media (min-width: 1000px){
-            margin: 10px auto;
+            align-items: center;
         }
         &__title{
             text-transform: uppercase;
@@ -80,14 +79,15 @@
         &__food{
             background-color: #ffffff;
             @include flexbox( none, space-between, flex-end);
-            max-width: 550px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
             height: 95px;
-            margin: 20px 0px;
+            margin: 20px auto;
             border-radius: 20px;
             @include shadows (5px);
-            overflow: hidden;
             @media (min-width: 1000px){
-                width: 450px;
+                width: 80%;
             }
             &::after{
                 content: '';
@@ -100,14 +100,14 @@
             &:hover{
                 &::after{
                     width: 100px;
-                    // animation: valid-width 1s ease forwards, valid-width 1s 2s ease forwards reverse;
                 }
             }
             &__title{
                 @include flexbox (column, center, flex-start);
                 height: 100%;
-                width: 70%;
-                padding: 0px 20px;
+                width: 90%;
+                padding-left: 20px;
+                white-space: nowrap;
                 overflow: hidden;
                 &:hover h4{
                     transition: color 1s;
@@ -116,13 +116,11 @@
                 & h4{
                     font-size: 22px;
                     margin: 5px 0px;
-                    white-space: nowrap;
                 }
                 p{
                     font-size: 19px;
                     color: $darkgrey;
                     margin: 0px;
-                    white-space: nowrap;
                 }
             }
             &__prix{
@@ -134,10 +132,12 @@
     }
     &__commande{
         @include flexbox( default, center, center);
+        width: 100%;
         height: 200px;
         margin: auto;
         @media (min-width: 1000px){
             background: radial-gradient($turquoise, $violet, $rose);
+            width: auto;
             padding: 50px;
             border-radius: 50%;
             border: 10px solid $turquoise;

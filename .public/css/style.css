@@ -13,9 +13,11 @@
 @keyframes card-load {
   from {
     opacity: 0;
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 @keyframes spin {
@@ -127,6 +129,12 @@
   font-family: "Roboto", "Shrikhand", sans-serif;
   src: "";
 }
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -417,9 +425,7 @@ footer ul li {
 @media (min-width: 1000px) {
   .menu {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 450px);
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
     margin: 10px;
     border-radius: 30px;
   }
@@ -428,11 +434,11 @@ footer ul li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
 }
 @media (min-width: 1000px) {
   .menu__card {
-    margin: 10px auto;
+    align-items: center;
   }
 }
 .menu__card__title {
@@ -458,16 +464,17 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 550px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
   height: 95px;
-  margin: 20px 0px;
+  margin: 20px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
-  overflow: hidden;
 }
 @media (min-width: 1000px) {
   .menu__card__food {
-    width: 450px;
+    width: 80%;
   }
 }
 .menu__card__food::after {
@@ -487,8 +494,9 @@ footer ul li {
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  width: 70%;
-  padding: 0px 20px;
+  width: 90%;
+  padding-left: 20px;
+  white-space: nowrap;
   overflow: hidden;
 }
 .menu__card__food__title:hover h4 {
@@ -498,13 +506,11 @@ footer ul li {
 .menu__card__food__title h4 {
   font-size: 22px;
   margin: 5px 0px;
-  white-space: nowrap;
 }
 .menu__card__food__title p {
   font-size: 19px;
   color: #585858;
   margin: 0px;
-  white-space: nowrap;
 }
 .menu__card__food__prix {
   font-size: 21px;
@@ -516,12 +522,14 @@ footer ul li {
   flex-direction: default;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 200px;
   margin: auto;
 }
 @media (min-width: 1000px) {
   .menu__commande {
     background: radial-gradient(#99E2D0, #9356DC, #FF79DA);
+    width: auto;
     padding: 50px;
     border-radius: 50%;
     border: 10px solid #99E2D0;
