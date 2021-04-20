@@ -4,5 +4,8 @@ body{
     @include flexbox(column);
     margin: 0px;
     font-size: 20px;
+    @media (min-width: 1000px){
+        background-color: $grey;
+    }
 }
 

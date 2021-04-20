@@ -18,6 +18,11 @@
     display: grid;
     grid-template-columns: 1fr 60% 1fr;
     grid-template-rows: 80px;
+    @media (min-width: 1000px){
+        grid-column: 1 / span 2;
+        background-color: white;
+        border-radius: 0px 0px 30px 30px;
+    }
     & i{
         margin: auto;
     }

@@ -8,3 +8,15 @@
         }
     }
 }
+
+@for $i from 1 through 3 {
+    @media (min-width: 1000px){
+        .menu__card:nth-child(#{$i}){
+            @for $j from 1 through 4 {
+                :nth-child(#{$j}){
+                    animation: card-load 300ms ($j * 300ms) both;
+                }
+            }
+        }
+    }
+}
