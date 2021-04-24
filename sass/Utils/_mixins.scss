@@ -15,6 +15,7 @@ $row: row;
 /*Mixin pour les ombres*/
 
 $shadow: 10px;
+
 @mixin shadows ($shadow-size: $shadow) {
     box-shadow: $shadow-size $shadow-size 5px $grey;
 }

@@ -443,6 +443,7 @@ footer ul li {
   .menu__card {
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 .menu__card__title {
@@ -468,17 +469,20 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
-  overflow: hidden;
-  width: 100%;
-  max-width: 500px;
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
+  overflow: hidden;
 }
 @media (min-width: 1000px) {
   .menu__card__food {
-    width: 400px;
+    width: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .menu__card__food {
+    width: 250px;
   }
 }
 .menu__card__food::after {
@@ -502,9 +506,7 @@ footer ul li {
   width: 335px;
   transition: width 1s;
   padding: 15px 0px 15px 20px;
-}
-.menu__card__food__title:hover {
-  color: #99E2D0;
+  overflow: hidden;
 }
 .menu__card__food__title h4 {
   font-size: 22px;
@@ -539,8 +541,9 @@ footer ul li {
   .menu__commande {
     width: auto;
     padding: 50px;
-    border-radius: 50%;
+    border-radius: 50px;
     border: 10px solid #99E2D0;
+    box-shadow: 30px 30px 30px #99E2D0, -30px -30px 30px #99E2D0, 30px -30px 30px #99E2D0, -30px 30px 30px #99E2D0, inset 30px 30px 30px #FF79DA, inset -30px -30px 30px #FF79DA;
   }
 }
 
