@@ -51,6 +51,7 @@
         
         @media (min-width: 1000px){
             align-items: center;
+            margin-top: 25px;
         }
         &__title{
             text-transform: uppercase;
@@ -80,7 +81,7 @@
             border-radius: 20px;
             @include shadows (5px);
             @media (min-width: 1000px){
-                width: 80%;
+                width: 400px;
             }
             &::after{
                 content: '';
@@ -91,29 +92,39 @@
                 border-radius: 0px 20px 20px 0px;
             }
             &:hover{
+                & .menu__card__food__title{
+                    width: 250px;
+                    transition: width 1s;
+                }
                 &::after{
+                    float: right;
                     width: 100px;
                 }
             }
             &__title{
-                @include flexbox (column, center, flex-start);
                 height: 100%;
-                width: 90%;
-                padding-left: 20px;
-                white-space: nowrap;
-                overflow: hidden;
-                &:hover h4{
-                    transition: color 1s;
+                width: 335px;
+                transition: width 1s;
+                padding: 15px 0px 15px 20px;
+                &:hover{
+                    // width: 250px;
+                    // transition: width 1s;
                     color: $turquoise;
                 }
                 & h4{
                     font-size: 22px;
                     margin: 5px 0px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 p{
                     font-size: 19px;
                     color: $darkgrey;
                     margin: 0px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
             &__prix{
@@ -129,7 +140,6 @@
         height: 200px;
         margin: auto;
         @media (min-width: 1000px){
-            background: radial-gradient($turquoise, $violet, $rose);
             width: auto;
             padding: 50px;
             border-radius: 50%;
