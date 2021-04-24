@@ -67,6 +67,9 @@
 .menu__card:nth-child(1) :nth-child(4) {
   animation: card-load 300ms 2400ms both;
 }
+.menu__card:nth-child(1) :nth-child(5) {
+  animation: card-load 300ms 2700ms both;
+}
 
 .menu__card:nth-child(2) :nth-child(1) {
   animation: card-load 300ms 2700ms both;
@@ -80,6 +83,9 @@
 .menu__card:nth-child(2) :nth-child(4) {
   animation: card-load 300ms 3600ms both;
 }
+.menu__card:nth-child(2) :nth-child(5) {
+  animation: card-load 300ms 3900ms both;
+}
 
 .menu__card:nth-child(3) :nth-child(1) {
   animation: card-load 300ms 3900ms both;
@@ -92,6 +98,9 @@
 }
 .menu__card:nth-child(3) :nth-child(4) {
   animation: card-load 300ms 4800ms both;
+}
+.menu__card:nth-child(3) :nth-child(5) {
+  animation: card-load 300ms 5100ms both;
 }
 
 @media (min-width: 1000px) {
@@ -107,6 +116,9 @@
   .menu__card:nth-child(1) :nth-child(4) {
     animation: card-load 300ms 1200ms both;
   }
+  .menu__card:nth-child(1) :nth-child(5) {
+    animation: card-load 300ms 1500ms both;
+  }
 }
 @media (min-width: 1000px) {
   .menu__card:nth-child(2) :nth-child(1) {
@@ -121,6 +133,9 @@
   .menu__card:nth-child(2) :nth-child(4) {
     animation: card-load 300ms 1200ms both;
   }
+  .menu__card:nth-child(2) :nth-child(5) {
+    animation: card-load 300ms 1500ms both;
+  }
 }
 @media (min-width: 1000px) {
   .menu__card:nth-child(3) :nth-child(1) {
@@ -134,6 +149,9 @@
   }
   .menu__card:nth-child(3) :nth-child(4) {
     animation: card-load 300ms 1200ms both;
+  }
+  .menu__card:nth-child(3) :nth-child(5) {
+    animation: card-load 300ms 1500ms both;
   }
 }
 @font-face {
@@ -159,6 +177,11 @@ body {
   body {
     background-color: #bebebe;
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .header-main {
@@ -191,8 +214,11 @@ body {
     border-radius: 0px 0px 30px 30px;
   }
 }
-.header-menu i {
-  margin: auto;
+.header-menu a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .header-menu__title {
   font-family: "Shrikhand", sans-serif;
@@ -225,6 +251,9 @@ footer ul {
 }
 footer ul li {
   margin: 10px;
+}
+footer ul li a {
+  color: white;
 }
 
 .loader {
@@ -359,15 +388,12 @@ footer ul li {
   padding: 0px 8%;
 }
 .section3 figcaption .coeur {
-  font-size: 30px;
-}
-.section3 figcaption .coeur ::before {
-  color: #000000;
-  transition: color 1s;
+  background-color: white;
+  font-size: 40px;
 }
 .section3 figcaption .coeur :hover::before {
-  font-weight: bold;
-  color: #FF79DA;
+  animation: heart 2s both;
+  cursor: pointer;
 }
 .section3 figcaption p {
   margin: 10px 0px;
@@ -423,7 +449,7 @@ footer ul li {
   justify-content: flex-start;
   align-items: stretch;
   padding-top: 25px;
-  padding: 0px 5%;
+  padding: 0px 2%;
 }
 @media (min-width: 1000px) {
   .menu {
@@ -438,12 +464,11 @@ footer ul li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  margin: 25px 0px;
 }
 @media (min-width: 1000px) {
   .menu__card {
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
   }
 }
 .menu__card__title {
@@ -469,6 +494,7 @@ footer ul li {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
+  width: 400px;
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
@@ -494,12 +520,11 @@ footer ul li {
   border-radius: 0px 20px 20px 0px;
 }
 .menu__card__food:hover .menu__card__food__title {
-  width: 250px;
+  width: 270px;
   transition: width 1s;
 }
 .menu__card__food:hover::after {
-  float: right;
-  width: 100px;
+  width: 90px;
 }
 .menu__card__food__title {
   height: 100%;
@@ -543,7 +568,7 @@ footer ul li {
     padding: 50px;
     border-radius: 50px;
     border: 10px solid #99E2D0;
-    box-shadow: 30px 30px 30px #99E2D0, -30px -30px 30px #99E2D0, 30px -30px 30px #99E2D0, -30px 30px 30px #99E2D0, inset 30px 30px 30px #FF79DA, inset -30px -30px 30px #FF79DA;
+    box-shadow: 20px 20px 20px #99E2D0, -20px -20px 20px #99E2D0, 20px -20px 20px #99E2D0, -20px 20px 20px #99E2D0, inset 20px 20px 20px #FF79DA, inset -20px -20px 20px #FF79DA;
   }
 }
 

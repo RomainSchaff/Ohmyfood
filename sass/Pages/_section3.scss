@@ -21,15 +21,12 @@
         @include flexbox(row, space-between, center);
         padding: 0px 8%;
         
-        & .coeur{
-            font-size: 30px;
-            ::before{
-                color: #000000;
-                transition: color 1s;
-            }
+        .coeur{
+            background-color: white;
+            font-size: 40px;
             :hover::before{
-                font-weight: bold;
-                color: $rose;
+                animation: heart 2s both;
+                cursor: pointer;
             }
         }
         & p{

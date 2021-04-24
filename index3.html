@@ -13,43 +13,135 @@
         <script src="https://kit.fontawesome.com/ee7ecebe9e.js" crossorigin="anonymous"></script>
     </head>
 
-
-
     <body>
 
-        <header>
+        <header class="header-menu">
 
-            <h1 class="shrikhand">Ohmyfood</h1>
-            
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="header-menu__title">Ohmyfood</h1>
+
         </header>
+
+        <section class="description">
+            <figure class="description__figure">
+                <img class="description__figure__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat cuisiné">
+                <figcaption class="description__figure__title">
+                    <h2>A la française</h2>
+                    <div class="coeur"><i class="far fa-heart"></i></div>
+                </figcaption>
+            </figure>
+        </section>
+
+        <div class="loader">
+            <div class="loader-spiner">Ohmyfood</div>
+        </div>
+
+        <div class="menu">
+
+        <section class="menu__card">
             
-        <section>
-            <h2>Entrées</h2>
-            <button><p><strong>Fricassée d'escargot</strong><br>Aux piment d'espelette</p><p>25€</p></button>
-        </section>
-        
-        <section>
-            <h2>Plats</h2>
-            <button><p><strong>Filet de boeuf aux herbes</strong><br>Accompagnée de sa rimbambelle de légumes</p><p>40€</p></button>
+            <h3 class="menu__card__title">Entrées</h3>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="menu__card__food__prix">25€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <p>Carotte, panais, topinambour</p>
+                </div>
+                <div class="menu__card__food__prix">35€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Soupe à l'oignon</h4>
+                    <p>Revisitée</p>
+                </div>
+                <div class="menu__card__food__prix">20€</div>   
+            </div>
+
         </section>
 
-        <section>
-            <h2>Desserts</h2>
-            <button><p><strong>Paris-Brest</strong><br>Revisité</p><p>18€</p></button>
+        <section class="menu__card">
+
+            <h3 class="menu__card__title">Plats</h3>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p>Accompagnée d'une purée de panais</p>
+                </div>
+                <div class="menu__card__food__prix">40€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Magret de canard</h4>
+                    <p>Et parmentier de pommes de terres</p>
+                </div>
+                <div class="menu__card__food__prix">35€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="menu__card__food__prix">44€</div>  
+            </div>
+
         </section>
 
-        <section>
-            <button>Commander</button>
+        <section class="menu__card">
+
+            <h3 class="menu__card__title">Desserts</h3>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Pétales de violettes glacés</h4>
+                    <p>Et purée de noisettes</p>
+                </div>
+                <div class="menu__card__food__prix">18€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Fondant au chocolat</h4>
+                    <p>Revisité</p>
+                </div>
+                <div class="menu__card__food__prix">22€</div>
+            </div>
+
+            <div class="menu__card__food">
+                <div class="menu__card__food__title">
+                    <h4>Millefeuille croustillant</h4>
+                    <p>Myrtilles et pâte d'amande</p>
+                </div>
+                <div class="menu__card__food__prix">23€</div>
+            </div>
+
         </section>
-        
+
+        <section class="menu__commande">
+            <button class="button-gradient">Commander</button>
+        </section>
+
+        </div>
+
         <footer>
 
-            <h1 class="shrikhand">Ohmyfood</h1>
+            <h1>Ohmyfood</h1>
             <ul>
-                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li><i class="fas fa-utensils"></i>&nbsp;&nbsp;Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</li>
                 <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a mailto:"romainschaff2612@gmail.com">Contact</a></li>
             </ul>
 
         </footer>

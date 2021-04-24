@@ -1,7 +1,7 @@
 
 @for $i from 1 through 3 {
     .menu__card:nth-child(#{$i}){
-        @for $j from 1 through 4 {
+        @for $j from 1 through 5 {
             :nth-child(#{$j}){
                 animation: card-load 300ms ($j * 300ms + $i * 1200ms) both;
             }
@@ -12,7 +12,7 @@
 @for $i from 1 through 3 {
     @media (min-width: 1000px){
         .menu__card:nth-child(#{$i}){
-            @for $j from 1 through 4 {
+            @for $j from 1 through 5 {
                 :nth-child(#{$j}){
                     animation: card-load 300ms ($j * 300ms) both;
                 }

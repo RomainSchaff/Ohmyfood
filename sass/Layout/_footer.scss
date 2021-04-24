@@ -18,6 +18,9 @@ footer{
         list-style-type: none;
         & li{
             margin: 10px;
+            & a {
+                color: white;
+            }
         }
     }
 }

@@ -23,8 +23,8 @@
         background-color: white;
         border-radius: 0px 0px 30px 30px;
     }
-    & i{
-        margin: auto;
+    & a{
+        @include flexbox(row, center, center);
     }
     &__title{
         font-family: "Shrikhand", sans-serif;
