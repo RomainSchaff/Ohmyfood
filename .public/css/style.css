@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Mixin pour les flexboxs*/
 /*Mixin pour les ombres*/
 /*Mixin pour les bordures (souvent des boutons)*/
@@ -479,13 +480,16 @@ footer ul li a {
   }
 }
 .description__figure__title .coeur {
-  background-color: #dcdcdc;
-  color: black;
+  color: #dcdcdc;
   font-size: 40px;
+  -webkit-text-stroke: 2px black;
+}
+.description__figure__title .coeur ::before {
+  font-weight: bold;
 }
 .description__figure__title .coeur :hover::before {
-  animation: heart 1s both;
   cursor: pointer;
+  animation: heart 1s both;
 }
 
 .menu {
@@ -540,7 +544,8 @@ footer ul li a {
   flex-direction: none;
   justify-content: space-between;
   align-items: flex-end;
-  width: 400px;
+  width: 90%;
+  max-width: 450px;
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
@@ -552,21 +557,22 @@ footer ul li a {
     width: 425px;
   }
 }
-@media (max-width: 425px) {
-  .menu__card__food {
-    width: 260px;
-  }
-}
 .menu__card__food::after {
-  content: "";
+  content: "";
+  font: normal normal normal 35px FontAwesome;
+  color: white;
   background-color: #99E2D0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 0px;
   transition: width 1s;
   border-radius: 0px 20px 20px 0px;
 }
 .menu__card__food:hover .menu__card__food__title {
-  width: 270px;
+  width: 70%;
   transition: width 1s;
 }
 .menu__card__food:hover::after {
@@ -574,7 +580,7 @@ footer ul li a {
 }
 .menu__card__food__title {
   height: 100%;
-  width: 335px;
+  width: 90%;
   transition: width 1s;
   padding: 15px 0px 15px 20px;
   overflow: hidden;
