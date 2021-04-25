@@ -8,10 +8,19 @@
 body{
     font-family: 'Roboto', sans-serif;
     @include flexbox(column);
-    margin: 0px;
     font-size: 20px;
-    @media (min-width: 1000px){
-        background-color: $grey;
+}
+
+.body-main{
+    @media (min-width: 1200px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .header-main{
+            grid-column: 1 / span 2;
+        }
+        .section3{
+            grid-column: 1 / span 2;
+        }
     }
 }
 

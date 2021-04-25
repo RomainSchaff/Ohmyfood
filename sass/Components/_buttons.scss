@@ -13,7 +13,7 @@
     &:hover{
         background: linear-gradient(to right bottom, lighten($color: $rose, $amount: 10) 0%, lighten($color: $violet, $amount: 10) 60%);
         @include shadows (10px);
-        transform: scale(1.2);
+        transform: scale(1.1);
         cursor: pointer;
     }
 }

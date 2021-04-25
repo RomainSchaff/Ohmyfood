@@ -47,14 +47,23 @@
 
 @keyframes heart {
     0%{
-        font-weight: normal;
-        color: black;
-        opacity: 1;
+        -webkit-text-stroke: 2px black;
+        font-weight: bold;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to bottom, transparent 40%, $rose, $violet);
+        background-size: 100% 200%;
     }
     100%{
+        -webkit-text-stroke: 2px black;
         font-weight: bold;
-        color: $rose;
-        opacity: 1;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to bottom, transparent 40%, $rose, $violet);
+        background-size: 100% 200%;
+        background-position-y: 100%;
     }
 }
 

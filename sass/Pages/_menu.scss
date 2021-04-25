@@ -24,9 +24,10 @@
             }
             .coeur{
                 background-color: $lightgrey;
+                color: black;
                 font-size: 40px;
                 :hover::before{
-                    animation: heart 2s both;
+                    animation: heart 1s both;
                     cursor: pointer;
                 }
             }
@@ -81,7 +82,7 @@
                 width: 425px;
             }
             @media (max-width: 425px){
-                width: 250px;
+                width: 260px;
             }
             &::after{
                 content: '';
@@ -139,7 +140,6 @@
             padding: 50px;
             border-radius: 50px;
             border: 10px solid $turquoise;
-            box-shadow: 20px 20px 20px $turquoise, -20px -20px 20px $turquoise, 20px -20px 20px $turquoise, -20px 20px 20px $turquoise, inset 20px 20px 20px $rose, inset -20px -20px 20px $rose;
         }
     }
 }
