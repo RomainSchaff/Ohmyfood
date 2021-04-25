@@ -1,12 +1,4 @@
 
-@keyframes valid-width{
-    from{
-        width: 0px;
-    }
-    to{
-        width: 100px;
-    }
-}
 
 @keyframes card-load {
     from{
@@ -52,16 +44,15 @@
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
-        background-image: linear-gradient(to bottom, transparent 40%, $rose, $violet);
+        background-image: linear-gradient(to bottom, transparent 30%, $violet, $rose);
         background-size: 100% 200%;
     }
     100%{
-        -webkit-text-stroke: 2px black;
         font-weight: bold;
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
-        background-image: linear-gradient(to bottom, transparent 40%, $rose, $violet);
+        background-image: linear-gradient(to bottom, transparent 30%, $violet, $rose);
         background-size: 100% 200%;
         background-position-y: 100%;
     }

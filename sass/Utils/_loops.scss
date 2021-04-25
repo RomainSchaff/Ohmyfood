@@ -20,3 +20,19 @@
         }
     }
 }
+
+
+@for $i from 2 through 3 {
+    .section3 figure:nth-child(#{$i}){
+        &::before{
+            content: 'Nouveau';
+            color: #007058;
+            background: $turquoise;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            padding: 6px 10px 5px 10px;
+            border-radius: 4px;
+        }
+    }
+}

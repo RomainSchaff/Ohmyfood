@@ -86,23 +86,32 @@
                 width: 425px;
             }
             &::after{
-                content: '\f058';
-                font: normal normal normal 35px FontAwesome;
-                color: white;
+                content: '';
                 background-color: $turquoise;
-                @include flexbox(row, center, center);
                 height: 100%;
                 width: 0px;
-                transition: width 1s;
-                border-radius: 0px 20px 20px 0px;
+                transition: width 0.5s;
+            }
+            &::before{
+                content: '\f058';
+                font: normal normal bold 35px 'Font Awesome 5 Free';
+                color: white;
+                position: absolute;
+                top: 28px;
+                right: 25px;
+                transform: translateX(63px) rotate(-270deg);
+                transition: transform 0.5s;
             }
             &:hover{
                 & .menu__card__food__title{
                     width: 70%;
-                    transition: width 1s;
+                    transition: width 0.5s;
                 }
                 &::after{
                     width: 90px;
+                }
+                &::before{
+                    transform: translateX(0px) rotate(0deg);
                 }
             }
             &__title{
@@ -130,7 +139,7 @@
             &__prix{
                 font-size: 21px;
                 font-weight: bold;
-                margin: 20px 10px;
+                margin: 20px 15px;
             }
         }
     }
@@ -138,7 +147,7 @@
         @include flexbox( default, center, center);
         width: 100%;
         height: 200px;
-        margin: auto;
+        margin: auto 0px;
         @media (min-width: 1000px){
             width: auto;
             padding: 50px;
