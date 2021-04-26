@@ -59,19 +59,6 @@
         &__title{
             text-transform: uppercase;
             font-weight: normal;
-            &:hover::after{
-                transform-origin: left;
-                transform: scaleX(5);
-                transition: transform 1s;
-            }
-            &::after{
-                content: '';
-                display: block;
-                width: 65px;
-                height: 5px;
-                background-color: $turquoise;
-                transform: scaleX(1);
-            }
         }
         &__food{
             background-color: #ffffff;
@@ -113,6 +100,9 @@
                 }
                 &::before{
                     transform: translateX(0px) rotate(0deg);
+                    @media (max-width: 425px){
+                        transform: translateX(8px) rotate(0deg);
+                    }
                 }
             }
             &__title{
