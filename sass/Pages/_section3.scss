@@ -40,7 +40,7 @@
             }
             :hover::before{
                 cursor: pointer;
-                animation: heart 1s both;
+                animation: heart 0.5s both;
             }
         }
         & p{

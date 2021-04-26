@@ -20,7 +20,8 @@
             margin: -50px 0px 0px 0px;
             border-radius: 30px 30px 0px 0px;
             @media (min-width: 1000px){
-                border-radius: 30px;
+                padding: 15px 5%;
+                border-radius: 25px;
             }
             .coeur{
                 color: $lightgrey;
@@ -31,7 +32,7 @@
                 }
                 :hover::before{
                     cursor: pointer;
-                    animation: heart 1s both;
+                    animation: heart 0.5s both;
                 }
             }
         }
@@ -46,7 +47,7 @@
     @media (min-width: 1000px){
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 10px;
+        margin: 0px;
         border-radius: 30px;
     }
     &__card{
