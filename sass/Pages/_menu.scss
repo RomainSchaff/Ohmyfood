@@ -26,13 +26,20 @@
             .coeur{
                 color: $lightgrey;
                 font-size: 40px;
-                -webkit-text-stroke: 2px black;
                 ::before{
+                    cursor: pointer;
                     font-weight: bold;
+                    -webkit-text-stroke: 2px black;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-image: linear-gradient(to bottom, transparent 40%, $violet, $rose);
+                    background-size: 100% 200%;
+                    transition: all 0.5s;
                 }
                 :hover::before{
-                    cursor: pointer;
-                    animation: heart 0.5s both;
+                    background-position-y: 100%;
+                    -webkit-text-stroke: 0px;
                 }
             }
         }
@@ -64,15 +71,12 @@
             background-color: #ffffff;
             @include flexbox( none, space-between, flex-end);
             width: 90%;
-            max-width: 450px;
+            max-width: 500px;
             height: 95px;
             margin: 20px auto;
             border-radius: 20px;
             @include shadows (5px);
             overflow: hidden;
-            @media (min-width: 1000px){
-                width: 425px;
-            }
             &::after{
                 content: '';
                 background-color: $turquoise;

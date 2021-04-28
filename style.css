@@ -36,73 +36,52 @@
     display: none;
   }
 }
-@keyframes heart {
-  0% {
-    -webkit-text-stroke: 0px;
-    font-weight: bold;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
-    background-size: 100% 200%;
-  }
-  100% {
-    -webkit-text-stroke: 0px;
-    font-weight: bold;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
-    background-size: 100% 200%;
-    background-position-y: 100%;
-  }
-}
 .menu__card:nth-child(1) :nth-child(1) {
-  animation: card-load 300ms 1500ms both;
+  animation: card-load 300ms 300ms both;
 }
 .menu__card:nth-child(1) :nth-child(2) {
-  animation: card-load 300ms 1800ms both;
+  animation: card-load 300ms 600ms both;
 }
 .menu__card:nth-child(1) :nth-child(3) {
-  animation: card-load 300ms 2100ms both;
+  animation: card-load 300ms 900ms both;
 }
 .menu__card:nth-child(1) :nth-child(4) {
-  animation: card-load 300ms 2400ms both;
+  animation: card-load 300ms 1200ms both;
 }
 .menu__card:nth-child(1) :nth-child(5) {
-  animation: card-load 300ms 2700ms both;
+  animation: card-load 300ms 1500ms both;
 }
 
 .menu__card:nth-child(2) :nth-child(1) {
-  animation: card-load 300ms 2700ms both;
+  animation: card-load 300ms 1500ms both;
 }
 .menu__card:nth-child(2) :nth-child(2) {
-  animation: card-load 300ms 3000ms both;
+  animation: card-load 300ms 1800ms both;
 }
 .menu__card:nth-child(2) :nth-child(3) {
-  animation: card-load 300ms 3300ms both;
+  animation: card-load 300ms 2100ms both;
 }
 .menu__card:nth-child(2) :nth-child(4) {
-  animation: card-load 300ms 3600ms both;
+  animation: card-load 300ms 2400ms both;
 }
 .menu__card:nth-child(2) :nth-child(5) {
-  animation: card-load 300ms 3900ms both;
+  animation: card-load 300ms 2700ms both;
 }
 
 .menu__card:nth-child(3) :nth-child(1) {
-  animation: card-load 300ms 3900ms both;
+  animation: card-load 300ms 2700ms both;
 }
 .menu__card:nth-child(3) :nth-child(2) {
-  animation: card-load 300ms 4200ms both;
+  animation: card-load 300ms 3000ms both;
 }
 .menu__card:nth-child(3) :nth-child(3) {
-  animation: card-load 300ms 4500ms both;
+  animation: card-load 300ms 3300ms both;
 }
 .menu__card:nth-child(3) :nth-child(4) {
-  animation: card-load 300ms 4800ms both;
+  animation: card-load 300ms 3600ms both;
 }
 .menu__card:nth-child(3) :nth-child(5) {
-  animation: card-load 300ms 5100ms both;
+  animation: card-load 300ms 3900ms both;
 }
 
 @media (min-width: 1000px) {
@@ -446,15 +425,22 @@ footer ul li a {
 }
 .section3 figcaption .coeur {
   color: white;
-  font-size: 35px;
-  -webkit-text-stroke: 2px black;
+  font-size: 38px;
 }
 .section3 figcaption .coeur ::before {
+  cursor: pointer;
   font-weight: bold;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
+  background-size: 100% 200%;
+  transition: all 0.5s;
 }
 .section3 figcaption .coeur :hover::before {
-  cursor: pointer;
-  animation: heart 0.5s both;
+  -webkit-text-stroke: 0px;
+  background-position-y: 100%;
 }
 .section3 figcaption p {
   margin: 10px 0px;
@@ -498,14 +484,21 @@ footer ul li a {
 .description__figure__title .coeur {
   color: #dcdcdc;
   font-size: 40px;
-  -webkit-text-stroke: 2px black;
 }
 .description__figure__title .coeur ::before {
+  cursor: pointer;
   font-weight: bold;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
+  background-size: 100% 200%;
+  transition: all 0.5s;
 }
 .description__figure__title .coeur :hover::before {
-  cursor: pointer;
-  animation: heart 0.5s both;
+  background-position-y: 100%;
+  -webkit-text-stroke: 0px;
 }
 
 .menu {
@@ -548,17 +541,12 @@ footer ul li a {
   justify-content: space-between;
   align-items: flex-end;
   width: 90%;
-  max-width: 450px;
+  max-width: 500px;
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #bebebe;
   overflow: hidden;
-}
-@media (min-width: 1000px) {
-  .menu__card__food {
-    width: 425px;
-  }
 }
 .menu__card__food::after {
   content: "";
