@@ -11,10 +11,12 @@
         padding: 15px;
     }
     &__title{
+        font-size: 35px;
         margin-bottom: 10px;
     }
     &__button{
         @include flexbox( row, flex-start, center);
+        background-color: $lightgrey;
         font-size: 20px;
         font-weight: bold;
         width: 100%;

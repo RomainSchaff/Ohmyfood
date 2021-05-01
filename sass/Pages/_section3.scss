@@ -39,6 +39,7 @@
                 font-weight: bold;
                 -webkit-text-stroke: 2px black;
                 color: transparent;
+                background-clip: initial;
                 -webkit-background-clip: text;
                 background-image: linear-gradient(to bottom, transparent 40%, $violet, $rose);
                 background-size: 100% 200%;
