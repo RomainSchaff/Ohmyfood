@@ -70,7 +70,7 @@
                 content: '';
                 display: block;
                 background-color: $turquoise;
-                width: 50px;
+                width: 60px;
                 height: 5px;
 
             }
@@ -78,7 +78,7 @@
         &__food{
             background-color: #ffffff;
             @include flexbox( row, space-between, flex-end);
-            width: 90%;
+            width: 95%;
             max-width: 500px;
             height: 95px;
             margin: 20px auto;
@@ -131,7 +131,7 @@
                     text-overflow: ellipsis;
                 }
                 p{
-                    font-size: 19px;
+                    font-size: 18px;
                     color: $darkgrey;
                     margin: 0px;
                     white-space: nowrap;

@@ -203,13 +203,40 @@ a {
 .header-main__title {
   font-family: "Shrikhand", sans-serif;
 }
-.header-main p {
-  background-color: #bebebe;
+.header-main form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6d6d6;
+  color: #353535;
+  height: 60px;
   width: 100%;
-  text-align: center;
-  padding: 20px 0px;
   margin: 0px;
-  box-shadow: inset 0px 5px 10px #585858;
+  padding-top: 5px;
+  box-shadow: inset 0px 3px 3px #585858;
+}
+.header-main form label {
+  width: 50px;
+  text-align: center;
+  margin-left: -20px;
+  cursor: pointer;
+}
+.header-main form label i {
+  font-size: 25px;
+}
+.header-main form input {
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  background-color: #d6d6d6;
+  color: #353535;
+  height: 100%;
+  width: 165px;
+  text-align: center;
+  border: none;
+}
+.header-main form input:focus {
+  outline: none;
 }
 
 .header-menu {
@@ -358,7 +385,7 @@ footer ul li a {
   border: none;
   outline: none;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #bebebe;
+  box-shadow: 5px 5px 5px #d6d6d6;
 }
 .section2__button__number {
   background-color: #9356DC;
@@ -381,7 +408,7 @@ footer ul li a {
 }
 .section2__button:hover {
   background-color: #e4d5f6;
-  box-shadow: 10px 10px 5px #bebebe;
+  box-shadow: 10px 10px 5px #d6d6d6;
 }
 .section2__button:hover i {
   color: #9356DC;
@@ -403,14 +430,14 @@ footer ul li a {
     grid-column: 1/3;
   }
 }
-.section3 figure {
+.section3 article {
   position: relative;
   background-color: white;
   height: 300px;
   width: 100%;
   margin: 20px 0px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #bebebe;
+  box-shadow: 5px 5px 5px #d6d6d6;
 }
 .section3 img {
   width: 100%;
@@ -418,7 +445,7 @@ footer ul li a {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-.section3 figcaption {
+.section3 .legende {
   font-size: 23px;
   display: flex;
   flex-direction: row;
@@ -426,11 +453,14 @@ footer ul li a {
   align-items: center;
   padding: 0px 8%;
 }
-.section3 figcaption .coeur {
+.section3 .legende h4 {
+  font-size: 25px;
+}
+.section3 .legende .coeur {
   color: white;
   font-size: 38px;
 }
-.section3 figcaption .coeur ::before {
+.section3 .legende .coeur ::before {
   cursor: pointer;
   font-weight: bold;
   -webkit-text-stroke: 2px black;
@@ -441,12 +471,13 @@ footer ul li a {
   background-size: 100% 200%;
   transition: all 0.5s;
 }
-.section3 figcaption .coeur :hover::before {
+.section3 .legende .coeur :hover::before {
   -webkit-text-stroke: 0px;
   background-position-y: 100%;
 }
-.section3 figcaption p {
-  margin: 10px 0px;
+.section3 .legende p {
+  font-size: 20px;
+  margin: 5px 0px;
 }
 
 .description__figure {
@@ -541,7 +572,7 @@ footer ul li a {
   content: "";
   display: block;
   background-color: #99E2D0;
-  width: 50px;
+  width: 60px;
   height: 5px;
 }
 .menu__card__food {
@@ -550,12 +581,12 @@ footer ul li a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 90%;
+  width: 95%;
   max-width: 500px;
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #bebebe;
+  box-shadow: 5px 5px 5px #d6d6d6;
   overflow: hidden;
 }
 .menu__card__food::after {
@@ -566,7 +597,7 @@ footer ul li a {
   transition: width 0.5s;
 }
 .menu__card__food::before {
-  content: "\f058";
+  content: "";
   font: normal normal bold 35px "Font Awesome 5 Free";
   color: white;
   position: absolute;
@@ -605,7 +636,7 @@ footer ul li a {
   text-overflow: ellipsis;
 }
 .menu__card__food__title p {
-  font-size: 19px;
+  font-size: 18px;
   color: #585858;
   margin: 0px;
   white-space: nowrap;
@@ -630,14 +661,14 @@ footer ul li a {
   border-radius: 50px;
   border: none;
   outline: none;
-  box-shadow: 5px 5px 5px #bebebe;
+  box-shadow: 5px 5px 5px #d6d6d6;
   transform: scale(1);
   transition: transform 300ms;
   align-self: center;
 }
 .button-gradient:hover {
   background: linear-gradient(to right bottom, #fface8 0%, #ae80e5 60%);
-  box-shadow: 10px 10px 5px #bebebe;
+  box-shadow: 10px 10px 5px #d6d6d6;
   transform: scale(1.1);
   cursor: pointer;
 }
