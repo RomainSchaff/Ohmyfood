@@ -31,7 +31,6 @@
                     font-weight: bold;
                     -webkit-text-stroke: 2px black;
                     color: transparent;
-                    background-clip: text;
                     -webkit-background-clip: text;
                     background-image: linear-gradient(to bottom, transparent 40%, $violet, $rose);
                     background-size: 100% 200%;
@@ -66,10 +65,18 @@
         &__title{
             text-transform: uppercase;
             font-weight: normal;
+            &::after{
+                content: '';
+                display: block;
+                background-color: $turquoise;
+                width: 50px;
+                height: 5px;
+
+            }
         }
         &__food{
             background-color: #ffffff;
-            @include flexbox( none, space-between, flex-end);
+            @include flexbox( row, space-between, flex-end);
             width: 90%;
             max-width: 500px;
             height: 95px;
@@ -139,7 +146,7 @@
         }
     }
     &__commande{
-        @include flexbox( default, center, center);
+        @include flexbox( row, center, center);
         width: 100%;
         height: 200px;
         margin: auto 0px;
