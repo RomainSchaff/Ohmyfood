@@ -597,7 +597,7 @@ footer ul li a {
   transition: width 0.5s;
 }
 .menu__card__food::before {
-  content: "";
+  content: '\f058';
   font: normal normal bold 35px "Font Awesome 5 Free";
   color: white;
   position: absolute;
