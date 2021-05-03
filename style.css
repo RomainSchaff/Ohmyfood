@@ -135,7 +135,7 @@
     animation: card-load 300ms 1500ms both;
   }
 }
-.section3 figure:nth-child(2)::before {
+.section3 article:nth-child(2)::before {
   content: "Nouveau";
   color: #007058;
   background: #99E2D0;
@@ -146,7 +146,7 @@
   border-radius: 4px;
 }
 
-.section3 figure:nth-child(3)::before {
+.section3 article:nth-child(3)::before {
   content: "Nouveau";
   color: #007058;
   background: #99E2D0;
@@ -597,7 +597,7 @@ footer ul li a {
   transition: width 0.5s;
 }
 .menu__card__food::before {
-  content: '\f058';
+  content: "\f058";
   font: normal normal bold 35px "Font Awesome 5 Free";
   color: white;
   position: absolute;

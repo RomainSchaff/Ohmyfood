@@ -23,7 +23,7 @@
 
 
 @for $i from 2 through 3 {
-    .section3 figure:nth-child(#{$i}){
+    .section3 article:nth-child(#{$i}){
         &::before{
             content: 'Nouveau';
             color: #007058;
