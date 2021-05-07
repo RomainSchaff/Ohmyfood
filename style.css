@@ -489,14 +489,14 @@ footer ul li a {
 }
 @media (min-width: 1000px) {
   .description__figure {
-    margin: 10px;
-    border-radius: 35px;
+    height: 550px;
+    margin: 10px 0px;
   }
-  .description__figure__img {
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-  }
+}
+.description__figure__img {
+  height: calc(100% - 38px);
+  object-fit: cover;
+  object-position: center;
 }
 .description__figure__title {
   font-family: "Shrikhand", sans-serif;
@@ -586,8 +586,8 @@ footer ul li a {
   height: 95px;
   margin: 20px auto;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #d6d6d6;
   overflow: hidden;
+  box-shadow: 5px 5px 5px #d6d6d6;
 }
 .menu__card__food::after {
   content: "";
@@ -597,14 +597,15 @@ footer ul li a {
   transition: width 0.5s;
 }
 .menu__card__food::before {
-  content: "\f058";
+  content: "";
   font: normal normal bold 35px "Font Awesome 5 Free";
   color: white;
   position: absolute;
   top: 28px;
   right: 25px;
   transform: translateX(63px) rotate(-270deg);
-  transition: transform 0.5s;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
 }
 .menu__card__food:hover .menu__card__food__title {
   width: 70%;
@@ -614,6 +615,7 @@ footer ul li a {
   width: 90px;
 }
 .menu__card__food:hover::before {
+  opacity: 1;
   transform: translateX(0px) rotate(0deg);
 }
 @media (max-width: 425px) {

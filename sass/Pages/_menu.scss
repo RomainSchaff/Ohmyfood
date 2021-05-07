@@ -4,13 +4,13 @@
         @include flexbox(column);
         margin: 0px;
         @media (min-width: 1000px){
-            margin: 10px;
-            border-radius: 35px;
-            &__img{
-                max-height: 400px;
-                object-fit: cover;
-                border-radius: 30px;
-            }
+            height: 550px;
+            margin: 10px 0px;
+        }
+        &__img{
+            height: calc(100% - 38px);
+            object-fit: cover;
+            object-position: center;
         }
         &__title{
             font-family: "Shrikhand", sans-serif;
@@ -72,7 +72,6 @@
                 background-color: $turquoise;
                 width: 60px;
                 height: 5px;
-
             }
         }
         &__food{
@@ -83,8 +82,8 @@
             height: 95px;
             margin: 20px auto;
             border-radius: 20px;
-            @include shadows (5px);
             overflow: hidden;
+            @include shadows (5px);
             &::after{
                 content: '';
                 background-color: $turquoise;
@@ -100,7 +99,8 @@
                 top: 28px;
                 right: 25px;
                 transform: translateX(63px) rotate(-270deg);
-                transition: transform 0.5s;
+                opacity: 0;
+                transition: transform 0.5s, opacity 0.5s;
             }
             &:hover{
                 & .menu__card__food__title{
@@ -111,6 +111,7 @@
                     width: 90px;
                 }
                 &::before{
+                    opacity: 1;
                     transform: translateX(0px) rotate(0deg);
                     @media (max-width: 425px){
                         transform: translateX(8px) rotate(0deg);
