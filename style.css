@@ -485,8 +485,8 @@ footer ul li a {
 }
 .description__figure__img {
   height: calc(100% - 38px);
+  width: 100%;
   object-fit: cover;
-  object-position: center;
 }
 .description__figure__title {
   font-family: "Shrikhand", sans-serif;

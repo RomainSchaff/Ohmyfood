@@ -11,8 +11,8 @@
         }
         &__img{
             height: calc(100% - 38px);
+            width: 100%;
             object-fit: cover;
-            object-position: center;
         }
         &__title{
             font-family: "Shrikhand", sans-serif;
