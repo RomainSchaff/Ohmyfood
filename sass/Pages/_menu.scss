@@ -2,6 +2,7 @@
 .description{
     &__figure{
         @include flexbox(column);
+        width: 100%;
         margin: 0px;
         @media (min-width: 1000px){
             height: 550px;
