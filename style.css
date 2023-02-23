@@ -138,7 +138,7 @@
 .section3 article:nth-child(2)::before {
   content: "Nouveau";
   color: #007058;
-  background: #99E2D0;
+  background: #99e2d0;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -149,7 +149,7 @@
 .section3 article:nth-child(3)::before {
   content: "Nouveau";
   color: #007058;
-  background: #99E2D0;
+  background: #99e2d0;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -161,7 +161,9 @@
   font-family: "Roboto", "Shrikhand", sans-serif;
   src: url(https://fonts.gstatic.com);
 }
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -182,10 +184,10 @@ body {
     grid-template-columns: 1fr 1fr;
   }
   .body-main .header-main {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
   .body-main .section3 {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 }
 
@@ -246,7 +248,7 @@ a {
 }
 @media (min-width: 1000px) {
   .header-menu {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
     background-color: white;
   }
 }
@@ -272,7 +274,7 @@ footer {
 }
 @media (min-width: 1000px) {
   footer {
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
     margin-top: 10px;
   }
 }
@@ -293,7 +295,7 @@ footer ul li a {
 }
 
 .loader {
-  background: radial-gradient(#FF79DA, #9356DC);
+  background: radial-gradient(#ff79da, #9356dc);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -307,11 +309,11 @@ footer ul li a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(#FF79DA, #9356DC);
-  border-top: 10px solid #9356DC;
-  border-left: 10px solid #99E2D0;
-  border-bottom: 10px solid #9356DC;
-  border-right: 10px solid #99E2D0;
+  background: radial-gradient(#ff79da, #9356dc);
+  border-top: 10px solid #9356dc;
+  border-left: 10px solid #99e2d0;
+  border-bottom: 10px solid #9356dc;
+  border-right: 10px solid #99e2d0;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -388,7 +390,7 @@ footer ul li a {
   box-shadow: 5px 5px 5px #d6d6d6;
 }
 .section2__button__number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   display: flex;
   flex-direction: row;
@@ -398,7 +400,7 @@ footer ul li a {
   width: 30px;
   margin-left: -42px;
   margin-right: 50px;
-  border: 2px solid #9356DC;
+  border: 2px solid #9356dc;
   border-radius: 50%;
 }
 .section2__button i {
@@ -411,7 +413,7 @@ footer ul li a {
   box-shadow: 10px 10px 5px #d6d6d6;
 }
 .section2__button:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .section3 {
@@ -457,8 +459,8 @@ footer ul li a {
   font-size: 25px;
 }
 .section3 .legende .coeur {
-  color: white;
-  font-size: 38px;
+  color: black;
+  font-size: 35px;
 }
 .section3 .legende .coeur ::before {
   cursor: pointer;
@@ -467,7 +469,12 @@ footer ul li a {
   color: transparent;
   background-clip: initial;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    #9356dc,
+    #ff79da
+  );
   background-size: 100% 200%;
   transition: all 0.5s;
 }
@@ -530,7 +537,12 @@ footer ul li a {
   color: transparent;
   background-clip: initial;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to bottom, transparent 40%, #9356DC, #FF79DA);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    #9356dc,
+    #ff79da
+  );
   background-size: 100% 200%;
   transition: all 0.5s;
 }
@@ -575,7 +587,7 @@ footer ul li a {
 .menu__card__title::after {
   content: "";
   display: block;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 60px;
   height: 5px;
 }
@@ -595,7 +607,7 @@ footer ul li a {
 }
 .menu__card__food::after {
   content: "";
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 100%;
   width: 0px;
   transition: width 0.5s;
@@ -663,7 +675,7 @@ footer ul li a {
   margin: 10px auto 50px auto;
   padding: 20px;
   color: white;
-  background: linear-gradient(to right bottom, #FF79DA 0%, #9356DC 60%);
+  background: linear-gradient(to right bottom, #ff79da 0%, #9356dc 60%);
   border-radius: 50px;
   border: none;
   outline: none;

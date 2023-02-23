@@ -1,28 +1,29 @@
-
-.loader{
-    background: radial-gradient($rose, $violet);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    animation: load 3s linear both;
+.loader {
+  background: radial-gradient($rose, $violet);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: load 3s linear both;
 }
 
-.loader-spiner{
-    font-family: "Shrikhand";
-    font-size: 50px;
-    @include flexbox(row, center, center);
-    background: radial-gradient($rose, $violet);
-    border-top: 10px solid $violet;
-    border-left: 10px solid $turquoise;
-    border-bottom: 10px solid $violet;
-    border-right: 10px solid $turquoise;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    animation: spin 3s linear both;
-    z-index: 10;
+.loader-spiner {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  @include flexbox(row, center, center);
+  background: radial-gradient($rose, $violet);
+  border-top: 10px solid $violet;
+  border-left: 10px solid $turquoise;
+  border-bottom: 10px solid $violet;
+  border-right: 10px solid $turquoise;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spin 3s linear both;
+  z-index: 2;
 }
-
